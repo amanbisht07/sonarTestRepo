@@ -1,6 +1,5 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
-import { Grid, Table, TableHeaderRow } from '@devexpress/dx-react-grid-material-ui';
 import { withStyles } from '@material-ui/core/styles';
   
  const styles = theme => ({
@@ -15,10 +14,7 @@ import { withStyles } from '@material-ui/core/styles';
  
 });
 const TableComponentBase = ({ classes, ...restProps }) => (
-  <Table.Table
-    {...restProps}
-    className={classes.tableStriped}
-  />
+  <h4>h55</h4>
 );
 export const TableComponent = withStyles(styles, { name: 'TableComponent' })(TableComponentBase);
 class Table4 extends React.Component{
@@ -34,14 +30,7 @@ class Table4 extends React.Component{
  };
  TableRow = ({ row, ...restProps }) => {
   return (
-    <Table.Row
-      {...restProps}
-      onClick={() => {
-        this.props.setSelectedRow(row);
-      
-      }}
-     
-    />
+   <h4>helo</h4>
   );
 };
   
@@ -51,14 +40,7 @@ render(){
   return(
    
   <Paper>
-    <Grid
-      rows={rows}
-      columns={columns}
-    >
-     
-      <Table  rowComponent={this.TableRow} />
-      <TableHeaderRow />
-    </Grid>
+    <h4>hello</h4>
   </Paper>
 );
 }

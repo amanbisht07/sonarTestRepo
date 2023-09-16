@@ -8,7 +8,7 @@ import {
   withStyles,
   CircularProgress
 } from "@material-ui/core";
-import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
+// import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 import { connect } from "react-redux";
 import { PropTypes } from "prop-types";
 import { withRouter } from "react-router-dom";
@@ -63,31 +63,8 @@ class SignIn extends Component {
                 </Grid>
                 <Grid item lg={7} md={7} sm={7} xs={12}>
                   <div className="p-36 h-100 bg-light-gray position-relative">
-                    <ValidatorForm ref="form" onSubmit={this.handleFormSubmit}>
-                      <TextValidator
-                          className="mb-24 w-100"
-                          variant="outlined"
-                          label="User Name"
-                          onChange={this.handleChange}
-                          type="text"
-                          name="email"
-                          value={email}
-                          validators={["required"]}
-                          errorMessages={[
-                            "this field is required",
-                          ]}
-                      />
-                      <TextValidator
-                          className="mb-16 w-100"
-                          label="Password"
-                          variant="outlined"
-                          onChange={this.handleChange}
-                          name="password"
-                          type="password"
-                          value={password}
-                          validators={["required"]}
-                          errorMessages={["this field is required"]}
-                      />
+                   
+                     
                       <div className="flex flex-middle mb-8">
                         <div className={classes.wrapper}>
                           <Button
@@ -107,7 +84,7 @@ class SignIn extends Component {
                           )}
                         </div>
                       </div>
-                    </ValidatorForm>
+                    
                   </div>
                 </Grid>
               </Grid>

@@ -46,15 +46,8 @@ const startProcess = [
 
 const routes = [
   ...dashboardRoutes,
-  ...materialRoutes,
-  ...utilitiesRoutes,
-  ...formsRoutes,
-  ...initiateRoutes,
-  ...initiateFileRoutes,
-  ...fileApproveRoutes,
   ...PersonnelRoutes,
   ...CorrespondenceRoutes,
-  ...MisRoutes,
   ...inboxRoutes,
   ...outboxRoutes,
   ...dmsRoutes,

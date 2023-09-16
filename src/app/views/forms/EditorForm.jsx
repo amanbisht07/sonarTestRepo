@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { RichTextEditor, Breadcrumb } from "./../../../matx";
+import { Breadcrumb } from "./../../../matx";
 
 class EditorForm extends Component {
   state = {
@@ -23,11 +23,6 @@ class EditorForm extends Component {
             ]}
           />
         </div>
-        <RichTextEditor
-          content={this.state.content}
-          handleContentChange={this.handleContentChange}
-          placeholder="insert text here..."
-        />
       </div>
     );
   }

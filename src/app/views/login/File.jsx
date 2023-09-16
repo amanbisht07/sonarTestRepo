@@ -7,7 +7,6 @@ import ReactDOM from "react-dom";
 import "./login.css";
 import history from "history.js";
 import { TextField } from "@material-ui/core";
-// import Particles from "tsparticles"
 
 const LoginPage = () => {
   // React States

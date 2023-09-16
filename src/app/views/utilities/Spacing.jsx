@@ -1,6 +1,5 @@
 import React from "react";
 import { Breadcrumb, SimpleCard } from "./../../../matx";
-import Highlight from "react-highlight";
 
 const Spacing = () => {
   return (
@@ -9,7 +8,7 @@ const Spacing = () => {
         <Breadcrumb
           routeSegments={[
             { name: "Utilities", path: "/utilities" },
-            { name: "Spacing" }
+            { name: "Spacing" },
           ]}
         />
       </div>
@@ -72,25 +71,25 @@ const Spacing = () => {
         <div className="flex flex-wrap flex-middle flex-space-between px-16">
           <code>.m-0</code>
           <div className="highlight-js">
-            <Highlight className="html">{`<div className="m-0">margin 0px</div>`}</Highlight>
+            <span className="html">{`<div className="m-0">margin 0px</div>`}</span>
           </div>
         </div>
         <div className="flex flex-wrap flex-middle flex-space-between px-16">
           <code>.mx-4</code>
           <div className="highlight-js">
-            <Highlight className="html">{`<div className="mx-4">margin right 4px & margin left 4-px</div>`}</Highlight>
+            <span className="html">{`<div className="mx-4">margin right 4px & margin left 4-px</div>`}</span>
           </div>
         </div>
         <div className="flex flex-wrap flex-middle flex-space-between px-16">
           <code>.p-0</code>
           <div className="highlight-js">
-            <Highlight className="html">{`<div className="p-0">padding 0px</div>`}</Highlight>
+            <span className="html">{`<div className="p-0">padding 0px</div>`}</span>
           </div>
         </div>
         <div className="flex flex-wrap flex-middle flex-space-between px-16">
           <code>.py-8</code>
           <div className="highlight-js">
-            <Highlight className="html">{`<div className="py-8">padding top 8px & padding bottom 8px</div>`}</Highlight>
+            <span className="html">{`<div className="py-8">padding top 8px & padding bottom 8px</div>`}</span>
           </div>
         </div>
       </SimpleCard>

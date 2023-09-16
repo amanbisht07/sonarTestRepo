@@ -1,21 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Paper from "@material-ui/core/Paper";
-import {
-    FilteringState, IntegratedFiltering, PagingState, IntegratedPaging, SortingState,
-    IntegratedSorting, SearchState, GroupingState, SelectionState,
-} from "@devexpress/dx-react-grid";
 import history from '../../../../history'
-import {
-    Grid,
-    Table,
-    TableHeaderRow,
-    PagingPanel,
-    Toolbar,
-    TableFilterRow,
-    GroupingPanel,
-    SearchPanel,
-    TableColumnResizing, TableSelection, TableRowDetail,
-} from "@devexpress/dx-react-grid-material-ui";
 import {withStyles} from "@material-ui/core";
 import {connect} from "react-redux";
 import {loadDraftData} from "../../../camunda_redux/redux/action";

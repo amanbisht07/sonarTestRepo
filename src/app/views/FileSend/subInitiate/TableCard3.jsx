@@ -1,20 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {
-    FilteringState, IntegratedFiltering, PagingState, IntegratedPaging, SortingState,
-    IntegratedSorting, SearchState, GroupingState, SelectionState, IntegratedGrouping,
-} from "@devexpress/dx-react-grid";
 import history from '../../../../history'
-import {
-    Grid as DevGrid,
-    Table,
-    TableHeaderRow,
-    PagingPanel,
-    Toolbar,
-    TableFilterRow,
-    GroupingPanel,
-    SearchPanel,
-    TableColumnResizing, TableSelection, TableRowDetail,
-} from "@devexpress/dx-react-grid-material-ui";
 import { Paper, Dialog, DialogContent, DialogTitle, Fab, FormControl, Grid, IconButton, Typography } from "@material-ui/core";
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import EditIcon from '@material-ui/icons/Edit';
@@ -23,7 +8,6 @@ import AddIcon from "@material-ui/icons/Add";
 import {PropTypes} from "prop-types";
 import {connect, useDispatch} from "react-redux";
 import { setSnackbar } from "../../../camunda_redux/redux/ducks/snackbar";
-import {Plugin, Template} from "@devexpress/dx-react-core";
 import {loadEnclosureData,uploadEnclosure,loadSfdt} from "../../../camunda_redux/redux/action";
 import DeleteIcon from '@material-ui/icons/Delete';
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
@@ -175,11 +159,12 @@ const TableCard3 = (props) => {
     const role = sessionStorage.getItem("role");
     const username = localStorage.getItem("username");
     const CustomToolbarMarkup = () => (
-        <Plugin name="customToolbarMarkup">
-            <Template name="toolbarContent">
-                <div style={{marginLeft: '40%', alignSelf: 'center'}}><Typography variant='button' align='center' color='primary'>{t("enclosure")}</Typography></div>
-            </Template>
-        </Plugin>
+        <h4>23</h4>
+        // <Plugin name="customToolbarMarkup">
+        //     <Template name="toolbarContent">
+        //         <div style={{marginLeft: '40%', alignSelf: 'center'}}><Typography variant='button' align='center' color='primary'>{t("enclosure")}</Typography></div>
+        //     </Template>
+        // </Plugin>
     );
 
     const handleFileClick = async e => {

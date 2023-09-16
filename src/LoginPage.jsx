@@ -17,7 +17,6 @@ import "./_index.scss";
 import { TextField } from "@material-ui/core";
 import Loading from "matx/components/MatxLoadable/Loading";
 // import { setSnackbar } from "../../pa/src/app/camunda_redux/redux/ducks/snackbar";
-// import bcrypt from 'bcryptjs';
 import CryptoJS from "crypto-js";
 import { Lock, Visibility, VisibilityOff } from "@material-ui/icons";
 import { Alert } from "@material-ui/lab";

@@ -1,20 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-    FilteringState, IntegratedFiltering, PagingState, IntegratedPaging, SortingState,
-    IntegratedSorting, SearchState, GroupingState, SelectionState, IntegratedGrouping,
-} from "@devexpress/dx-react-grid";
 import history from '../../../../history'
-import {
-    Grid as DevGrid,
-    Table,
-    TableHeaderRow,
-    PagingPanel,
-    Toolbar,
-    TableFilterRow,
-    GroupingPanel,
-    SearchPanel,
-    TableColumnResizing, TableSelection, TableRowDetail,
-} from "@devexpress/dx-react-grid-material-ui";
 import { Button, Dialog, DialogContent, DialogTitle, Fab, FormControl, Grid, IconButton, Paper, makeStyles, Typography } from "@material-ui/core";
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import EditIcon from '@material-ui/icons/Edit';
@@ -23,7 +8,6 @@ import AddIcon from "@material-ui/icons/Add";
 import _ from "lodash";
 import {connect, useDispatch} from "react-redux";
 import { setSnackbar } from "../../../camunda_redux/redux/ducks/snackbar";
-import {Plugin, Template} from "@devexpress/dx-react-core";
 import {loadNotingData, uploadNoting, loadSfdt} from "../../../camunda_redux/redux/action";
 import DeleteIcon from '@material-ui/icons/Delete';
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Grid as DevTable, PagingPanel, Table, TableHeaderRow, TableFilterRow } from "@devexpress/dx-react-grid-material-ui";
 import { Divider, alpha, Grid, IconButton, Paper, Typography, withStyles } from "@material-ui/core";
-import { IntegratedPaging, PagingState, FilteringState, SortingState, IntegratedFiltering, IntegratedSorting } from "@devexpress/dx-react-grid";
 import CloseIcon from '@material-ui/icons/Close';
 import { connect, useDispatch } from "react-redux";
 import { getMISDetailTableList } from '../../../camunda_redux/redux/action';

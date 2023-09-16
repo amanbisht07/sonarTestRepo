@@ -8,7 +8,6 @@ import "./_index.scss";
 import { TextField } from "@material-ui/core";
 import Loading from "matx/components/MatxLoadable/Loading";
 // import { setSnackbar } from "../../../camunda_redux/redux/ducks/snackbar";
-// import Particles from "tsparticles"
 
 const LoginPage = () => {
   // React States

@@ -1,21 +1,10 @@
 import React, { useEffect, useState } from "react";
-import {
-    Grid as DevTable,
-    Table,
-    TableHeaderRow,
-    TableTreeColumn,
-    Toolbar,
-    TableFilterRow,
-    TableColumnResizing
-} from '@devexpress/dx-react-grid-material-ui';
 import { Card, Grid, IconButton, Paper, Tooltip, Typography } from "@material-ui/core";
-import { CustomTreeData, TreeDataState, FilteringState, SortingState, IntegratedFiltering, IntegratedSorting } from "@devexpress/dx-react-grid";
 import { alpha } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
 import { connect, useDispatch } from "react-redux";
 import { getMISTableList } from "../../../camunda_redux/redux/action";
 import { Loading } from '../therme-source/material-ui/loading';
-import { Plugin, Template } from "@devexpress/dx-react-core";
 import { setSnackbar } from "app/camunda_redux/redux/ducks/snackbar";
 import DoughnutChart from './Doughnut';
 import AspectRatioIcon from '@material-ui/icons/AspectRatio';

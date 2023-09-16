@@ -32,7 +32,6 @@ export { default as MatxSnackbar } from "./components/MatxSnackbar";
 export { EchartTheme } from "./theme/EchartTheme";
 export { default as EchartCreator } from "./components/charts/EchartCreator";
 
-export { default as RichTextEditor } from "./components/RichTextEditor";
 export { default as ConfirmationDialog } from "./components/ConfirmationDialog";
 export { default as MatxProgressBar } from "./components/MatxProgressBar";
 export { default as SimpleCard } from "./components/cards/SimpleCard";

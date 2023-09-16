@@ -1,18 +1,5 @@
 import React, { useState } from "react";
 import Paper from "@material-ui/core/Paper";
-import { IntegratedFiltering,  PagingState, IntegratedPaging,SortingState,
-    IntegratedSorting,SearchState, GroupingState, } from "@devexpress/dx-react-grid";
-
-import {
-  Grid,
-  Table,
-  TableHeaderRow,
-  PagingPanel,
-  Toolbar,
-  GroupingPanel,
-  SearchPanel,
-  TableColumnResizing,
-} from "@devexpress/dx-react-grid-material-ui";
 import { useTranslation } from "react-i18next";
 
 export default () => {
